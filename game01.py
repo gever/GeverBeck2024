@@ -115,12 +115,15 @@ for _ in range(100):
 
 def update_game():
         # TODO:
-    # 1 - instantiate a player (creature subclass) DONE
-    # 2 - use keypresses to modify player velocity (skate physics w/drag) DONE
-    # 3 - creatures that are within N distance from the player, move towards the player DONE
-    # 4 - creature within radius of the player dies, but does damage to player DONE
-    # 5 - creatures collide as well DONE 
-    # 6 - one pass through the creature list per update NOT DONE
+    # 1 - DONE instantiate a player (creature subclass)
+    # 2 - DONE use keypresses to modify player velocity (skate physics w/drag)
+    # 3 - DONE creatures that are within N distance from the player, move towards the player
+    # 4 - DONE creature within radius of the player dies, but does damage to player
+    # 5 - DONE creatures collide as well
+    # 6 - NOT DONE (we'll get back to this one) one pass through the creature list per update
+    # 7 - creatures get "goals" (pick a random point that they are moving towards, update point when they achieve goal)
+    # 8 - increase creature count to the point where frame rate suffers
+    # 9 - obstacles: introduce static circles that creatures and player cannot pass through
     global creatures
     new_creatures = []
 
